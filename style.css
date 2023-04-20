@@ -39,7 +39,17 @@ z-index: 1;
 display: inline-block;
 text-align: center;
 }
+nav.animation{
+position: absolute;
+height: 100px;
+top: 0;
 
+z-index: 0;
+background: #1abc9c;
+width: 100px;
+
+
+}
 a:nth-child(1){
 width: 100px;
 
