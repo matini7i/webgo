@@ -1,11 +1,103 @@
+@import url(https://matinordikhanii.github.io/webgo/);
 header{
-id: 10px;
+font-family:  'Open Sans',  sans-serif;
 
-
+background: #2c3e50;
 
 
 
 }
+nav{
+position: relative;
+margin: 270px auto 0;
+
+width: 590px;
+
+height: 50px;
+
+background: #34495e;
+
+border-radius: 8px;
+
+font-size: 0;
+box-shadow: 0 2px 3px 0 rgb(0, 0, 0,.1);
+
+}
+nav a{
+
+font-size: 15px;
+
+text-transform: uppercase;
+
+color: white;
+
+text-decoration: none;
+
+line-height: 50px;
+position: relative;
+z-index: 1;
+display: inline-block;
+text-align: center;
+}
+
+a:nth-child(1){
+width: 100px;
+
+}
+
+
+
+
+a:nth-child(2){
+width: 110px;
+
+}
+
+
+
+
+a:nth-child(3){
+width: 160px;
+
+}
+
+
+
+
+a:nth-child(4){
+width: 120px;
+
+}
+
+
+
+
+a:nth-child(5){
+width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h1{
 color: maroon;
 
@@ -16,7 +108,7 @@ border: 2px rgb(16, 10, 19);
 }
 image{
 
-size: 300px;
+size: 20px;
 
 
 }
