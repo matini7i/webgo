@@ -1,11 +1,14 @@
+header{
+width: 200px;
+height: 400px;
+}
 
 
-
-@import url(https://matinordikhanii.github.io/webgo/);
+@import url(https://matinordikhanii.github.io/webgo/) ;
 header{
 font-family:  'Open Sans',  sans-serif;
 
-background: #2c3e50;
+background: ;
 
 
 
@@ -105,15 +108,7 @@ color: darkred;
 
 
 
-}
 
-image{
-width: 12px;
-height: 10px;
-
-
-
-}
 
 
 
