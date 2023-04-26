@@ -1,7 +1,6 @@
-header{
-width: auto;
-height: auto;
-}
+
+
+
 
 
 
@@ -111,14 +110,26 @@ color: darkred;
 
 
 
+.er{
+width: 600px;
 
 
 
 
+}
+
+.vvr{
+width: 600px;
+height: 700px;
+
+
+}
+image{
+margin: 300px 400px 300px
 
 
 
-
+}
 
 
 
