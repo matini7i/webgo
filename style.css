@@ -135,12 +135,24 @@ width: 400px;
 
 }
 
+.lo{
+background-color: rgb(116, 240, 207);
 
 
 
 
+}
+
+.tot{
+width: 400px;
+height: 400px;
+background-color: aqua;
+margin: 100px 500px ;
 
 
+
+
+}
 
 
 
