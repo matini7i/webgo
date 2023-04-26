@@ -160,14 +160,14 @@ margin: 100px 500px ;
 margin: 10px;
 width: 20px 20px;
 
-background-color: black;
+background-color: green;
 
 }
 
 
 .rg{
-background-color: black;
-border: red solid 13px;
+background-color: rgb(0, 0, 0);
+border: rgba(236, 13, 13, 0.268) solid 13px;
 width: 130px;
 margin: 100px 10px 20px 119px;
 margin-top: 13px;
