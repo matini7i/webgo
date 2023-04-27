@@ -143,12 +143,12 @@ background-color: rgb(116, 240, 207);
 }
 
 .tot{
-width: 287px;
-height: 236px;
+width: 287px ;
+height: 236px ;
 background-color: rgb(11, 218, 121);
 margin: 0 ;
 margin-top: 5px;
-
+border-radius: 10px;
 
 
 }
@@ -192,7 +192,14 @@ font-size: xx-large;
 
 text-decoration-line: underline;
 }
+body{
+background:url(image/والپیپر-پسرانه-سیاه-9.jpg);
 
+
+
+
+
+}
 
 
 
