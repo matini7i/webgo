@@ -60,7 +60,7 @@ border-radius: 8px;
 
 a:nth-child(1){
 width: 120px;
-
+color: #ff0000;
 }
 
 
@@ -76,7 +76,7 @@ color: red;
 
 a:nth-child(3){
 width: 120px;
-color: fuchsia;
+color: rgb(255, 0, 0);
 }
 
 
@@ -193,7 +193,7 @@ text-decoration-line: underline;}
 
 
 body{
-background: url(image/ww.jpg)
+background: url(image/3434881.jpg)
 
 
 
