@@ -60,7 +60,7 @@ border-radius: 8px;
 
 a:nth-child(1){
 width: 120px;
-color: #ff0000;
+color: #ffffff;
 }
 
 
@@ -76,7 +76,7 @@ color: red;
 
 a:nth-child(3){
 width: 120px;
-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
 }
 
 
