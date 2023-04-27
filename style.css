@@ -144,7 +144,7 @@ background-color: rgb(255, 0, 0);
 .tot{
 width: 380px ;
 height: 236px ;
-background-color: rgb(249, 222, 222);
+background-color: rgb(255, 255, 255);
 margin: 0 ;
 margin-top: 5px;
 border-radius: 10px;
@@ -188,7 +188,7 @@ height: 1px 2px ;
 .rvt{
 font-size: xx-large;
 
-text-decoration-line: underline;}
+text-decoration: none;}
 
 
 body{
