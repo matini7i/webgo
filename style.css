@@ -134,7 +134,7 @@ width: 350px;
 }
 
 .lo{
-background-color: rgb(116, 240, 207);
+background-color: rgb(255, 0, 0);
 
 
 
@@ -142,9 +142,9 @@ background-color: rgb(116, 240, 207);
 }
 
 .tot{
-width: 287px ;
+width: 380px ;
 height: 236px ;
-background-color: rgb(11, 218, 121);
+background-color: rgb(249, 222, 222);
 margin: 0 ;
 margin-top: 5px;
 border-radius: 10px;
@@ -181,9 +181,8 @@ font-size:large;
 
 .fff{
 
-
-width: 10px   14px;
-
+width: 16px   16px;
+height: 1px 2px ;
 }
 
 .rvt{
@@ -199,8 +198,21 @@ background:url(image/mmm.jpg)
 
 }
 
+.matin{
+background: url(image/images.jpg);
 
 
+
+
+
+}
+.kk{
+background:no-repeat url(image/irs01_s3old_1576494461447777.jpg);
+
+
+
+
+}
 
 
 
