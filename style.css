@@ -1,8 +1,4 @@
 
-
-
-
-
 @import url(https://matinordikhanii.github.io/webgo/)  ;
 header{
 font-family:  'Open Sans',  sans-serif;
@@ -103,6 +99,10 @@ width: 100px;
 
 .ru{
 color: rgb(255, 0, 0);
+border: 2px solid black;
+border-radius: 15px;
+background-color: greenyellow;
+
 }
 
 
@@ -142,9 +142,9 @@ background-color: rgb(255, 0, 0);
 }
 
 .tot{
-width: 380px ;
-height: 236px ;
-background-color: rgb(255, 255, 255);
+width: 420px ;
+height: 197px ;
+background: url(image/صص.jpg);
 margin: 0 ;
 margin-top: 5px;
 border-radius: 10px;
@@ -180,9 +180,11 @@ font-size:large;
 }
 
 .fff{
+margin-left: 10px 10px;
+border-radius: 10px;
+ text-align: center;
 
-width: 16px   16px;
-height: 1px 2px ;
+
 }
 
 .rvt{
@@ -192,14 +194,14 @@ text-decoration: none;}
 
 
 body{
-background:url(image/mmm.jpg)
+background:url(image/صص.jpg)
 
 
 
 }
 
 .matin{
-background: url(image/images.jpg);
+background: url(image/صص.jpg);
 
 
 
@@ -220,12 +222,46 @@ text-decoration: none;
 
 }
 .kkm{
-font-size:x-large;
 
 
 
 }
 
+.mt5{
+background-color: red;
+text-align: center;
 
+
+}
+.ll{
+text-align: center;
+color: red;
+
+
+}
+
+.bgb{
+
+
+
+
+}
+
+.yh{
+text-shadow: 2px 2px 5px red;
+
+
+
+
+}
+
+.nvb{
+margin: 15px 16px;
+color: red;
+border: 3px solid black;
+width: 328px;
+height: 54px;
+background-color: aqua;
+}
 
 
