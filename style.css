@@ -225,7 +225,11 @@ text-decoration: none;
 
 
 
+
 }
+
+
+
 
 .mt5{
 background-color: red;
@@ -263,5 +267,25 @@ width: 328px;
 height: 54px;
 background-color: aqua;
 }
+.mat{
+font-size: x-large;
+
+
+}
+
+.maaitt{
+font-size: x-large;
+
+}
+.maaitt:hover{
+background-color: red;
+
+
+}
+.mat:hover{
+    background-color: red;
+}
+
+
 
 
