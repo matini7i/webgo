@@ -238,8 +238,11 @@ text-align: center;
 }
 .ll{
 text-align: center;
-color: red;
-
+background-color: red  "hedeen";
+text-shadow: 2px 2px 5px red;
+font-size: xx-large;
+margin-top: 1px;
+list-style-type: none;
 
 }
 
@@ -291,7 +294,12 @@ text-decoration: none;
 
 }
 
+.mt6{
+text-shadow: 2px 2px 5px red;
 
+
+
+}
 
 
 
