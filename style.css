@@ -216,8 +216,7 @@ background:url(image/nody-بک-گراند-مشکی-ساده-1677507011.png)
 }
 .njn{
 text-decoration: none;
-
-
+background-color: red;
 
 
 }
@@ -285,6 +284,13 @@ background-color: red;
 .mat:hover{
     background-color: red;
 }
+
+.bhb2{
+text-decoration: none;
+
+
+}
+
 
 
 
