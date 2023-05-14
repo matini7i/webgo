@@ -1,228 +1,153 @@
+@import url(https://matinordikhanii.github.io/webgo/);
 
-@import url(https://matinordikhanii.github.io/webgo/)  ;
-header{
-font-family:  'Open Sans',  sans-serif;
+header {
+    font-family: 'Open Sans', sans-serif;
 
 
 
 
 
 }
-nav{
-position: relative;
-margin-top: 100px 200px;
 
-width: 590px;
+nav {
+    position: relative;
+    margin-top: 100px 200px;
 
-height: 50px;
+    width: 590px;
 
-background: #000000;
+    height: 50px;
 
-border-radius: 8px;
+    background: #000000;
 
-font-size: 0;
-box-shadow: 0 2px 3px 0 rgb(0, 0, 0);
+    border-radius: 8px;
+
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgb(0, 0, 0);
 
 }
-nav a{
 
-font-size: 15px;
+nav a {
 
-text-transform: uppercase;
+    font-size: 15px;
 
-color: white;
+    text-transform: uppercase;
 
-text-decoration: none;
+    color: white;
 
-line-height: 50px;
-position: relative;
-z-index: 1;
-display: inline-block;
-text-align: center;
-}
-nav
-nav.animation{
-position: absolute;
-height: 100px;
-top: 0;
+    text-decoration: none;
 
-z-index: 0;
-background: #1abc9c;
-width: 100px;
-border-radius: 8px;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
 }
 
+nav nav.animation {
+    position: absolute;
+    height: 100px;
+    top: 0;
 
-
-a:nth-child(1){
-width: 120px;
-color: #ffffff;
+    z-index: 0;
+    background: #1abc9c;
+    width: 100px;
+    border-radius: 8px;
 }
 
 
 
-
-a:nth-child(2){
-width: 110px;
-color: red;
+a:nth-child(1) {
+    width: 120px;
+    color: #ffffff;
 }
 
 
 
 
-a:nth-child(3){
-width: 120px;
-color: rgb(255, 255, 255);
+a:nth-child(2) {
+    width: 110px;
+    color: red;
 }
 
 
 
 
-a:nth-child(4){
-width: 125px;
-
+a:nth-child(3) {
+    width: 120px;
+    color: rgb(255, 255, 255);
 }
 
 
 
 
-a:nth-child(5){
-width: 100px;
+a:nth-child(4) {
+    width: 125px;
 
 }
 
 
 
 
-
-
-
-.ru{
-color: rgb(255, 0, 0);
-border: 2px solid black;
-border-radius: 15px;
-background-color: greenyellow;
-
-}
-
-
-.er{
-width: 400px;
-margin: 300px 300pxpx  200px ;
-margin-top: 100px;
-
-
-}
-
-.vvr{
-width: 600px;
-height: 700px;
-
-
-}
-image{
-margin: 300px 400px 300px
-
-
-
-}
-
-.uuu{
-width: 350px;
-
-
-}
-
-.lo{
-background-color: rgb(255, 0, 0);
-
-
-
-
-}
-
-.tot{
-width: 420px ;
-height: 197px ;
-background: url(image/صص.jpg);
-margin: 0 ;
-margin-top: 5px;
-border-radius: 10px;
-
+a:nth-child(5) {
+    width: 100px;
 
 }
 
 
 
 
-.dd{
-margin: 10px;
-width: 20px 20px;
 
-background-color: green;
+
+
+.ru {
+    color: rgb(255, 0, 0);
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: greenyellow;
 
 }
 
 
-.rg{
-background-color: rgb(0, 0, 0);
-border: rgba(0, 42, 255, 0.268) solid 13px;
-width: 130px;
-margin: 100px 10px 20px 120px;
-margin-top: 13px;
-}
-
-.et{
-
-font-size:large;
+.er {
+    width: 400px;
+    margin: 300px 300pxpx 200px;
+    margin-top: 100px;
 
 
 }
 
-.fff{
-margin-left: 10px 10px;
-border-radius: 10px;
- text-align: center;
+.vvr {
+    width: 600px;
+    height: 700px;
 
 
 }
 
-.rvt{
-font-size: xx-large;
+image {
+    margin: 300px 400px 300px
+}
 
-text-decoration: none;}
-
-
-body{
-background:url(image/صص.jpg)
-
+.uuu {
+    width: 350px;
 
 
 }
 
-.matin{
-background: url(image/صص.jpg);
-
+.lo {
+    background-color: rgb(255, 0, 0);
 
 
 
 
 }
-.kk{
-background:url(image/nody-بک-گراند-مشکی-ساده-1677507011.png)
 
-
-
-}
-.njn{
-text-decoration: none;
-background-color: red;
-
-
-}
-.kkm{
-
-
+.tot {
+    width: 420px;
+    height: 197px;
+    background: url(image/صص.jpg);
+    margin: 0;
+    margin-top: 5px;
+    border-radius: 10px;
 
 
 }
@@ -230,87 +155,189 @@ background-color: red;
 
 
 
-.mt5{
-background-color: red;
-text-align: center;
+.dd {
+    margin: 10px;
+    width: 20px 20px;
 
-
-}
-.ll{
-text-align: center;
-background-color: red  "hedeen";
-text-shadow: 2px 2px 5px red;
-font-size: xx-large;
-margin-top: 1px;
-list-style-type: none;
+    background-color: green;
 
 }
 
-.bgb{
 
-
-
-
+.rg {
+    background-color: rgb(0, 0, 0);
+    border: rgba(0, 42, 255, 0.268) solid 13px;
+    width: 130px;
+    margin: 100px 10px 20px 120px;
+    margin-top: 13px;
 }
 
-.yh{
-text-shadow: 2px 2px 5px red;
+.et {
 
-
+    font-size: large;
 
 
 }
 
-.nvb{
-margin: 15px 16px;
-color: red;
-border: 3px solid black;
-width: 328px;
-height: 54px;
-background-color: aqua;
-}
-.mat{
-
+.fff {
+    margin-left: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
 
 
 }
 
-.maaitt{
+.rvt {
+    font-size: xx-large;
+
+    text-decoration: none;
+}
+
+
+body {
+    background: url(image/صص.jpg)
+}
+
+.matin {
+    background: url(image/صص.jpg);
+
+
+
 
 
 }
-.maaitt:hover{
-background-color: red;
+
+.kk {
+    background: url(image/nody-بک-گراند-مشکی-ساده-1677507011.png)
+}
+
+.njn {
+    text-decoration: none;
+    background-color: red;
 
 
 }
-.mat:hover{
+
+.kkm {}
+
+
+
+
+.mt5 {
+    background-color: red;
+    text-align: center;
+
+
+}
+
+.ll {
+    text-align: center;
+    background-color: red "hedeen";
+    text-shadow: 2px 2px 5px red;
+    font-size: xx-large;
+    margin-top: 1px;
+    list-style-type: none;
+
+}
+
+.bgb {}
+
+.yh {
+    text-shadow: 2px 2px 5px red;
+
+
+
+
+}
+
+.nvb {
+    margin: 15px 16px;
+    color: red;
+    border: 3px solid black;
+    width: 328px;
+    height: 54px;
+    background-color: aqua;
+}
+
+.mat {}
+
+.maaitt {}
+
+.maaitt:hover {
+    background-color: red;
+
+
+}
+
+.mat:hover {
     background-color: red;
 }
 
-.bhb2{
+.bhb2 {
+    text-decoration: none;
+
+
+}
+
+.mt6 {
+    text-shadow: 2px 2px 5px red;
+
+
+
+}
+
+.bfb {
+    margin: 15px;
+
+
+
+}
+
+.vfv {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px red;
+    margin: 30px;
+
+}
+
+.t4 {
+    color: red;
+
+
+
+
+}
+.bod{
+background: url(image/صص.jpg);
+
+
+}
+
+.matinjon{
+background-color: aqua;
+width: 1212px;
+height: 81px;
+margin: 8px;;
+border: 4px solid red;
+border-radius: 12px;
+
+}
+
+.www{
+ margin: 12px;
+font-size: 30px;
+
+
+
+}
+
+.lpl{
+border: 3px solid black;
+border-radius: 12px;
+background-color: gray;
 text-decoration: none;
-
-
-}
-
-.mt6{
-text-shadow: 2px 2px 5px red;
-
-
-
-}
-
-.bfb{
-margin: 15px;
-
-
-
-}
-.vfv{
-text-decoration: none;
-text-shadow: 2px 2px 5px red;
-margin: 30px;
-
+color: red;
+margin:220px ;
+margin-left: 10px;
 }
 
