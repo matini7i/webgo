@@ -297,7 +297,7 @@ body {
     text-decoration: none;
     text-shadow: 2px 2px 5px red;
     margin: 30px;
-
+width: 100px;
 }
 
 .t4 {
@@ -340,4 +340,69 @@ color: red;
 margin:220px ;
 margin-left: 10px;
 }
-
+/* کد CSS برای ریسپانسیو کردن یک وبسایت */
+/* تنظیم عرض ماکزیمم برای صفحه */
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* تنظیم استایل برای تلفن همراه */
+  @media only screen and (max-width: 600px) {
+    /* استایل لوگو */
+    .logo {
+      width: 50%;
+    }
+  
+    /* استایل منو */
+    .menu {
+      display: none;
+    }
+  
+    /* استایل محتوا */
+    .content {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* تنظیم استایل برای تبلت */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* استایل لوگو */
+    .logo {
+      width: 30%;
+    }
+  
+    /* استایل منو */
+    .menu {
+      display: block;
+      width: 70%;
+    }
+  
+    /* استایل محتوا */
+    .content {
+      width: 70%;
+      padding: 20px;
+    }
+  }
+  
+  /* تنظیم استایل برای دسکتاپ */
+  @media only screen and (min-width: 1025px) {
+    /* استایل لوگو */
+    .logo {
+      width: 20%;
+    }
+  
+    /* استایل منو */
+    .menu {
+      display: block;
+      width: 30%;
+    }
+  
+    /* استایل محتوا */
+    .content {
+      width: 70%;
+      padding: 30px;
+    }
+  }
+  
