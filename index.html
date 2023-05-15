@@ -1,5 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
+
+<!DOCTYPE html  >
+<html>
+<head class="hhh">
+  <title>بازی حدس عدد</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>بازی حدس عدد</h1>
+  <p>عدد را بین 1 تا 1000 حدس بزنید:</p>
+  <input type="number" id="guessInput" min="1" max="100">
+  <button onclick="checkGuess()">بررسی</button>
+  <p id="message"></p>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
+<script>
+function checkGuess() {
+    var guess = document.getElementById("guessInput").value;
+    var message = document.getElementById("message");
+    
+    if (guess < targetNumber) {
+      message.textContent = "عددی بزرگتر را حدس بزنید.";
+    } else if (guess > targetNumber) {
+      message.textContent = "عددی کوچکتر را حدس بزنید.";
+    } else {
+      message.textContent = "تبریک! شما عدد را حدس زدید.";
+    }
+  }
+  
+  var targetNumber = Math.floor(Math.random() * 1000) + 1;
+  
+  function checkGuess() {
+    var guess = parseInt(document.getElementById("guessInput").value);
+    var message = document.getElementById("message");
+  
+    if (isNaN(guess) || guess < 1 || guess > 1000) {
+      message.textContent = "لطفاً یک عدد معتبر بین 1 تا 100 وارد کنید.";
+    } else {
+      if (guess < targetNumber) {
+        message.textContent = "عددی بزرگتر را حدس بزنید.";
+      } else if (guess > targetNumber) {
+        message.textContent = "عددی کوچکتر را حدس بزنید.";
+      } else {
+        message.textContent = "تبریک! شما عدد را حدس زدید.";
+      }
+    }
+  }
+  
+
+
+
+
+
+
+
+</script>  
+
+<!-- <!DOCTYPE html>
+<html lang="en" hidden>
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -117,4 +187,4 @@
 
 
 </body>
-</html>
+</html> -->
