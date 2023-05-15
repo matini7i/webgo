@@ -16,15 +16,15 @@
 <body>
   <h1>بازی حدس عدد</h1>
   <p>عدد را بین 1 تا 1000 حدس بزنید:</p>
-  <input type="number" id="guessInput" min="1" max="100">
-  <button onclick="checkGuess()">بررسی</button>
+  <input class="huh" type="number" id="guessInput" min="1" max="100">
+  <button class="tyt" onclick="checkGuess()">بررسی</button>
   <p id="message"></p>
 
   <script src="game.js"></script>
 </body>
 </html>
 
-<script>
+<script class="frf">
 function checkGuess() {
     var guess = document.getElementById("guessInput").value;
     var message = document.getElementById("message");
