@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 <!DOCTYPE html>
@@ -187,4 +187,198 @@ function checkGuess() {
 
 
 </body>
-</html> -->
+</html> --> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>پیام‌رسان ساده</title>
+    <style>
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>پیام‌رسان ساده</h2>
+    <div id="messageContainer"></div>
+    <input type="text" id="senderInput" placeholder="فرستنده">
+    <input type="text" id="receiverInput" placeholder="گیرنده">
+    <textarea id="messageInput" placeholder="متن پیام"></textarea>
+    <button onclick="sendMessage()">ارسال</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<Script>
+  let messages = [];
+
+function sendMessage() {
+    const sender = document.getElementById('senderInput').value;
+    const receiver = document.getElementById('receiverInput').value;
+    const message = document.getElementById('messageInput').value;
+
+    messages.push({ sender, receiver, message });
+
+    displayMessages();
+    clearInputs();
+}
+
+function displayMessages() {
+    const container = document.getElementById('messageContainer');
+    container.innerHTML = '';
+
+    messages.forEach(msg => {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message');
+        messageElement.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
+        container.appendChild(messageElement);
+    });
+}
+
+function clearInputs() {
+    document.getElementById('senderInput').value = '';
+    document.getElementById('receiverInput').value = '';
+    document.getElementById('messageInput').value = '';
+}
+// قسمت قبلی کد ها
+
+// تابعی برای دریافت پیام‌ها بر اساس گیرنده
+function getMessages(receiver) {
+    const receivedMessages = messages.filter(msg => msg.receiver === receiver);
+    return receivedMessages;
+}
+
+// تابعی برای نمایش پیام‌های دریافتی
+function displayReceivedMessages() {
+    const receiver = document.getElementById('receiverInput').value;
+    const receivedMessages = getMessages(receiver);
+
+    const container = document.getElementById('receivedMessageContainer');
+    container.innerHTML = '';
+
+    receivedMessages.forEach(msg => {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message');
+        messageElement.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
+        container.appendChild(messageElement);
+    });
+}
+// قسمت قبلی کد‌ها
+
+// تابعی برای حذف پیام‌های دریافتی
+function clearReceivedMessages() {
+    const container = document.getElementById('receivedMessageContainer');
+    container.innerHTML = '';
+}
+
+// تابعی برای حذف همه پیام‌ها
+function clearAllMessages() {
+    messages = [];
+    displayMessages();
+    clearReceivedMessages();
+    clearInputs();
+}
+
+</Script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>پیام‌رسان ساده</title>
+    <style>
+        /* قسمت قبلی کد‌ها */
+
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>پیام‌رسان ساده</h2>
+    <div id="messageContainer"></div>
+    <input type="text" id="senderInput" placeholder="فرستنده">
+    <input type="text" id="receiverInput" placeholder="گیرنده">
+    <textarea id="messageInput" placeholder="متن پیام"></textarea>
+    <button onclick="sendMessage()">ارسال</button>
+
+    <h3>پیام‌های دریافتی</h3>
+    <div id="receivedMessageContainer"></div>
+    <button onclick="displayReceivedMessages()">نمایش پیام‌های دریافتی</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>پیام‌رسان ساده</title>
+    <style>
+        /* قسمت قبلی کد‌ها */
+
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>پیام‌رسان ساده</h2>
+    <div id="messageContainer"></div>
+    <input type="text" id="senderInput" placeholder="فرستنده">
+    <input type="text" id="receiverInput" placeholder="گیرنده">
+    <textarea id="messageInput" placeholder="متن پیام"></textarea>
+    <button onclick="sendMessage()">ارسال</button>
+
+    <h3>پیام‌های دریافتی</h3>
+    <div id="receivedMessageContainer"></div>
+    <button onclick="displayReceivedMessages()">نمایش پیام‌های دریافتی</button>
+
+    <h3>پاسخ دادن به پیام</h3>
+    <input type="text" id="replySenderInput" placeholder="فرستنده">
+    <textarea id="replyMessageInput" placeholder="متن پیام"></textarea>
+    <button onclick="sendReply()">ارسال پاسخ</button>
+
+    <button onclick="clearReceivedMessages()">پاکسازی پیام‌های دریافتی</button>
+    <button onclick="clearAllMessages()">پاکسازی همه پیام‌ها</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<Script>
+  // قسمت قبلی کد‌ها
+
+// تابعی برای ارسال پاسخ به گیرنده
+function sendReply() {
+    const sender = document.getElementById('replySenderInput').value;
+    const receiver = document.getElementById('senderInput').value;
+    const message = document.getElementById('replyMessageInput').value;
+
+    messages.push({ sender, receiver, message });
+
+    displayReceivedMessages();
+    clearInputs();
+}
+
+// تابعی برای پاکسازی همه فیلدها
+function clearAllFields() {
+    document.getElementById('senderInput').value = '';
+    document.getElementById('receiverInput').value = '';
+    document.getElementById('messageInput').value = '';
+    document.getElementById('replySenderInput').value = '';
+    document.getElementById('replyMessageInput').value = '';
+}
+
+// تابعی برای پاکسازی همه پیام‌ها و فیلدها
+function clearAllMessages() {
+    messages = [];
+    displayMessages();
+    clearReceivedMessages();
+    clearAllFields();
+}
+
+</Script>
