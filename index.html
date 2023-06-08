@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
   <button class="tyt" onclick="checkGuess()">بررسی</button>
   <p id="message"></p>
 
-  <script src="game.js"></script>
+  <script src=""></script>
 </body>
 </html>
 
@@ -187,4 +187,221 @@ function checkGuess() {
 
 
 </body>
-</html> -->
+</html> --> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avoid the Obstacles!</title>
+    <style>
+        #game-container {
+            width: 800px;
+            height: 600px;
+            position: relative;
+            border: 1px solid black;
+        }
+        #player {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+        }
+        .obstacle {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+  <style>
+    body {
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333333;
+        margin-top: 50px;
+    }
+</style>
+<style>
+  #player {
+      background-color: yellow;
+      border: 1px solid #999999;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+  }
+</style>
+<style>
+  .obstacle {
+      background-color: blue;
+      border: 2px solid #ffffff;
+      width: 50px;
+      height: 100px;
+      position: absolute;
+  }
+</style>
+
+  <img id="player" src="player.png" alt="Player">
+
+    <div id="game-container">
+        <div id="player"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+}
+#player{
+    /* کدهای قبلی */
+
+    transition: top
+}
+</style>
+<script>
+  
+  
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var player = document.getElementById("player");
+    var gameContainer = document.getElementById("game-container");
+
+    var playerLeft = 375;
+    var playerTop = 275;
+    var obstacles = [];
+
+    function updatePlayerPosition() {
+        player.style.left = playerLeft + "px";
+        player.style.top = playerTop + "px";
+    }
+
+    function createObstacle() {
+        var obstacle = document.createElement("div");
+        obstacle.className = "obstacle";
+        obstacle.style.left = "800px";
+        obstacle.style.top = Math.floor(Math.random() * 550) + "px";
+        gameContainer.appendChild(obstacle);
+        obstacles.push(obstacle);
+    }
+
+    function updateObstacles() {
+        for (var i = 0; i < obstacles.length; i++) {
+            var obstacle = obstacles[i];
+            obstacle.style.left = (parseInt(obstacle.style.left) - 5) + "px";
+
+            if (collisionCheck(player, obstacle)) {
+                alert("Game Over!");
+            }
+
+            if (parseInt(obstacle.style.left) < -50) {
+                gameContainer.removeChild(obstacle);
+                obstacles.splice(i, 1);
+                i--;
+            }
+        }
+    }
+
+    function collisionCheck(element1, element2) {
+        var rect1 = element1.getBoundingClientRect();
+        var rect2 = element2.getBoundingClientRect();
+        return !(
+            rect1.top > rect2.bottom ||
+            rect1.bottom < rect2.top ||
+            rect1.left > rect2.right ||
+            rect1.right < rect2.left
+        );
+    }
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowUp" && playerTop > 0) {
+            playerTop -= 5;
+        }
+        if (event.key === "ArrowDown" && playerTop < 550) {
+            playerTop += 5;
+        }
+        updatePlayerPosition();
+    });
+
+    setInterval(function() {
+        createObstacle();
+    }, 2000);
+
+    setInterval(function() {
+        updateObstacles();
+    }, 20);
+});
+obstacle.style.left = (parseInt(obstacle.style.left) - 8) + "px";
+var obstacleInterval = 2000;
+setInterval(function() {
+    createObstacle();
+}, obstacleInterval);
+
+setInterval(function() {
+    obstacleInterval -= 100; // کاهش زمان ایجاد مانع‌ها به ازای هر 0.1 ثانیه
+}, 5000); // هر 5 ثانیه
+function updateObstacles() {
+    // کدهای قبلی
+
+    if (collisionCheck(player, obstacle)) {
+        playCollisionSound(); // تابعی برای پخش صدا
+        alert("Game Over!");
+    }
+
+    // کدهای بعدی
+}
+document.addEventListener("DOMContentLoaded", function() {
+    var ball = document.getElementById("ball");
+    var angle = 0;
+
+    function rotateBall() {
+        angle += 1;
+        ball.style.transform = "rotate(" + angle + "deg)";
+    }
+
+    setInterval(function() {
+        rotateBall();
+    }, 10);
+});
+function updateObstacles() {
+    for (var i = 0; i < obstacles.length; i++) {
+        var obstacle = obstacles[i];
+        obstacle.style.left = (parseInt(obstacle.style.left) - obstacleSpeed) + "px";
+
+        // بررسی برخورد بازیکن با مانع
+        if (
+            player.offsetLeft < obstacle.offsetLeft + obstacle.offsetWidth &&
+            player.offsetLeft + player.offsetWidth > obstacle.offsetLeft &&
+            player.offsetTop < obstacle.offsetTop + obstacle.offsetHeight &&
+            player.offsetTop + player.offsetHeight > obstacle.offsetTop
+        ) {
+            // بازیکن با مانع برخورد کرده است
+            endGame();
+            return; // قطع اجرای تابع
+        }
+
+        // بررسی وقتی مانع از صفحه خارج می‌شود
+        if (obstacle.offsetLeft + obstacle.offsetWidth < 0) {
+            // حذف مانع از آرایه obstacles
+            obstacles.splice(i, 1);
+            // حذف مانع از صفحه
+            obstacle.remove();
+            i--;
+        }
+    }
+
+    requestAnimationFrame(updateObstacles);
+}
+
+function endGame() {
+    alert("Game Over!");
+    // متوقف کردن بازی و اعمال تغییرات دیگر مورد نیاز
+}
+
+</script>
