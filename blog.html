@@ -1,52 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" hidden>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="matin">
-  
+<body class="pp">
+    <script>
+        function copyToClipboard(element) {
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val($(element).text()).select();
+          document.execCommand("copy");
+          $temp.remove();
+          alert('کپی با موفقیت انجام شد');
+        }
+        </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="style.css">
-<body class="lo">
-    <center> <h1 dir="rtl" class="ru">
-      سلام دوستان در اینجا به ساخت بات میپردازیم فیلتر شکن بزن و ویدیو رو ببین یوتیوب
-        </h1></center>
-  
-  
-    <hr>
-    <body>
-      <center>
-<h2 style="color: red;">
-     lets go
-</h2>
-</center>
-<hr>
-<center>
-  <h2 style="color: red;">
-    
-  <h2
-</center>
-
-
-<h1 class="njn">
-  <a href="https://youtu.be/poPT2S8vQDQ"> کلیک کن برا آموزش</a>
-</h1>
-<hr>
-
-<h1 style="color: red;">
-  پیام بدیدادمین روبیکامون 
-  <hr>
-  
-  
-
-</h1>
-
-
-<h1><p class="yh"> @Matinorb</p></h1>
-
+<p class="gy" id="matna4">-----BEGIN ARGO VPN BRIDGE BLOCK-----
+    eNoVzN1ugjAYANB36bWJpUYMJruQitry45Ct1sabImg+UaooMFj27tPrk5xf1OTV
+    A0yJptYA3XR3MTpDU5R3vD1cHZySqEkps1nhQUB5ryQnSjJYA7d3ZNNrMiYqGddK
+    xm9v0xHH7GxwNI8cNEAPOJX6WVf5qwy9b8pcJVb+l97BfhhukiLzs08Rl7baxpN6
+    UvHtrdDRaSECsgzlDLyZcbHfu4G4SjgLSx4vd3o3NPhZgZt2etny0X7YrLV1cHD4
+    gf7+AUX8Qys=
+    -----END ARGO VPN BRIDGE BLOCK-----</p>
+<button class="ft"  onclick="copyToClipboard('#matna4')">کپی لینک</button>
 </body>
-
 </html>
